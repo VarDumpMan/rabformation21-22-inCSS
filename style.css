@@ -1,0 +1,243 @@
+/* Travail sur le body de la page et les textes en général */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Travail sur le header de la page */
+
+/* Le header en général */
+
+header {
+    background-image: url(Images/fond.jpg);
+    color: #fffffa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 400px;
+}
+
+/* Logo du site */
+header img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+  
+/* Le titre h1 */
+header h1 {
+    text-transform: uppercase;
+}
+
+/* Travail sur le main */
+
+/* Mettre en forme le main */
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Mise en forme sur les deux div du main */
+main .firstdiv, main .seconddiv {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* Mise en forme sur le hr*/
+main hr {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur directe des images */
+main .article_icon .image {
+
+    background-image: url(Images/fond2.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 90px 50px 90px;
+    padding: 30px;
+    width: 80px;
+    height: 80px; 
+    /* La propriété transforme est une des propriétés puissantes de transformation. 
+    La valzur rotate permet de mettre en rotation un élément suivant un angle de rotation qu'on indique */
+
+    transform: rotate(-44deg); /* L'angle est -42 degré ici */
+    border-radius: 10px;
+}
+
+/* Mise en forme de chaque image d'article */
+main .article_icon img {
+    width: 80px;
+    height: 80px; 
+    transform: rotate(44deg); /* L'angle est 42 degré ici */
+}
+
+main .article_fond img {
+    width: 300px;
+    height: 150px;
+}
+
+/* Titre des articles */
+
+main h2 {
+    text-align: center;
+}
+
+/* Texte des articles */
+
+main p {
+    padding: 0 10px;
+    text-align: justify;
+}
+
+/* Le bouton d'ajout */
+main .more {
+    text-transform: capitalize;
+    background-image: url(Images/fond2.jpg);
+    text-align: center;
+    width: 50px;
+    padding: 10px 30px;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+main .more:hover {
+    padding: 12px 32px;
+}
+
+main .more:active {
+    border: 5px solid chocolate;
+}
+
+/* Mise en forme sur le footer */
+
+/* Footer en général */
+footer {
+    background: url(Images/fond2.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 30px 50px;
+    margin-top: 20px;
+}
+
+/* Container */
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Lien du footer */
+footer a {
+    color: whitesmoke;
+}
+
+footer a:hover {
+    color: navy;
+}
+footer a:focus {
+    border: 1px dotted white;
+    text-decoration: none;
+    color: white;
+}
+/* Image du footer */
+
+/* Conteneur de l'image */
+footer .image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 7px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Adress, Mail, Social, Phone */
+footer .adress, footer .email, footer .social, footer .phone {
+    display: flex;
+}
+
+/* Div de Adress */
+footer .adress div, footer .email div, footer .social div, footer .phone div {
+    margin-left: 10px;
+}
+
+/* Social and Phone */
+footer .socialphone {
+    margin-top: 50px;
+}
+
+/* Formulaire */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+/* Titre du formulaire */
+form h2 {
+    text-transform: uppercase;
+}
+
+/* Les inputs et textarea */
+input, textarea {
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    outline: none;
+}
+
+/* Les inputs de saisies */
+
+/* Utilisons un selecteur particulier nombalise[attribut="valeur"] 
+
+Selection du mail et du nom
+*/
+input[type="text"], input[type="email"] {
+    width: 150px;
+    height: 25px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Textarea */
+textarea {
+    width: 300px;
+    resize: none;
+    padding: 10px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Le bouton Send */
+form input[type="submit"] {
+    cursor: pointer;
+    width: 80px;
+    background-color: #d3a50e;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+/* Mise en forme des informations de création */
+footer .creatInfo {
+    text-align: center;
+}
